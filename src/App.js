@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MyProfileMobile from './components/My-profile-mobile-view';
+import FullProfileMobileView from './components/Full-profile-mobile-view';
+import MyBookingsMobileView from './components/My-bookings-mobile-view' 
+import SavedPackagesMobileView from './components/Saved-packages-mobile-view';// Import your FullProfileMobileView component
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/full-profile" element={<FullProfileMobileView />} />
+        <Route path="/" element={<MyProfileMobile />} />
+        <Route path ="/my-bookings" element={<MyBookingsMobileView/>} />
+        <Route path="/saved-packages" element ={<SavedPackagesMobileView/>} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
