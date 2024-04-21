@@ -2,7 +2,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import { faChevronLeft, faChevronRight, faPhone, faEnvelope, faMapMarkerAlt, faEye, faBriefcase, faBookmark, faEdit, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faChevronRight, faPhone, faEnvelope, faMapMarkerAlt, faUser, faBriefcase, faBookmark, faEdit, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
 
 const MyProfileMobile = () => {
   return (
@@ -40,7 +40,7 @@ const MyProfileMobile = () => {
       {/* Buttons */}
       <div className="flex flex-col mt-8 items-start">
         <Link to="/full-profile" className="flex items-center mb-2 w-full justify-start">
-          <FontAwesomeIcon icon={faEye} className="text-[#222222] mr-2" />
+          <FontAwesomeIcon icon={faUser} className="text-[#222222] mr-2" />
           <span className=" text-[#222222] text-base font-normal">View Full Profile</span>
           <FontAwesomeIcon icon={faChevronRight} className="text-[#222222] ml-auto" />
         </Link>

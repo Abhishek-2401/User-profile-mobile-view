@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MyProfileMobile from './components/My-profile-mobile-view';
 import FullProfileMobileView from './components/Full-profile-mobile-view';
 import MyBookingsMobileView from './components/My-bookings-mobile-view' 
-import SavedPackagesMobileView from './components/Saved-packages-mobile-view';// Import your FullProfileMobileView component
+import SavedPackagesMobileView from './components/Saved-packages-mobile-view';
+import './styles.css'// Import your FullProfileMobileView component
 
 const App = () => {
   return (
