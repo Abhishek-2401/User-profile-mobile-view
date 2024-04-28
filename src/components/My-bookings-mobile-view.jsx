@@ -15,7 +15,6 @@ const MyBookingsMobileView = () => {
     // Add logic for filter functionality here
   };
 
-  // Sample booking cards data (replace with actual data)
   
     const cards = [
         {
@@ -180,7 +179,7 @@ const MyBookingsMobileView = () => {
                 </a>
               ) : null}
 
-              {/* Tag and Price in One Line */}
+    
               <div className="flex items-center mr-2">
                 <div
                   style={{ backgroundColor: card.tag1bg }}
