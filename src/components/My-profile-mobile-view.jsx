@@ -1,4 +1,4 @@
-// MyProfileMobile.jsx
+
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
@@ -35,10 +35,8 @@ const MyProfileMobile = () => {
           <p className="text-sm font-light text-[#404040] mr-4">Thiruvananthapuram, Kerala</p>
         </div>
       </div>
-      {/* Horizontal line */}
       <hr className="my-4 mt-8 border-[#E6E6E6]" />
-      {/* Buttons */}
-      <div className="flex flex-col mt-8 items-start">
+       <div className="flex flex-col mt-8 items-start">
         <Link to="/full-profile" className="flex items-center mb-2 w-full justify-start">
           <FontAwesomeIcon icon={faUser} className="text-[#222222] mr-2" />
           <span className=" text-[#222222] text-base font-normal">View Full Profile</span>
@@ -55,10 +53,8 @@ const MyProfileMobile = () => {
           <FontAwesomeIcon icon={faChevronRight} className="text-[#222222] ml-auto" />
         </Link>
       </div>
-      {/* Additional horizontal line */}
       <hr className="my-4 mt-6 border-[#E6E6E6]" />
-      {/* Edit Profile and Exit buttons */}
-      <div className="flex flex-col mt-6 items-start">
+    <div className="flex flex-col mt-6 items-start">
         <button className="flex items-center mb-2 w-full justify-start">
           <FontAwesomeIcon icon={faEdit} className="text-[#222222] mr-2" />
           <span className=" text-[#222222] text-base font-normal">Edit Profile</span>
