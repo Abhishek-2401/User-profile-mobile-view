@@ -31,7 +31,6 @@ const FullProfileMobileView = () => {
   return (
     <div className="flex justify-center w-100% overflow-hidden items-center h-full">
       <div className=" w-full mt-2 bg-white">
-        {/* Heading with Chevron Left and Edit Icon */}
         <div className="flex items-center p-2 justify-between mb-4">
           <button onClick={handleBackClick} className="text-xl  text-[#222222]">
             <FontAwesomeIcon icon={faChevronLeft} />
@@ -50,7 +49,6 @@ const FullProfileMobileView = () => {
           </div>
         </div>
 
-        {/* Profile Photo */}
         <div className="flex justify-center mb-4">
           <img
             src="Myprofile.png" // Replace with your actual profile photo URL
@@ -59,10 +57,10 @@ const FullProfileMobileView = () => {
           />
         </div>
 
-        {/* Input Fields */}
+
         <div className="p-4 mr-4">
           <div className="mb-4 ">
-            {/* Row 1 */}
+          
             <div className="mb-6 border-[1px] w-full  border-[#C2C2C2] rounded-xl h-14   relative flex items-center">
               <label
                 htmlFor="First Name"
@@ -130,7 +128,6 @@ const FullProfileMobileView = () => {
                   >
                     <option value="+91">+91</option>
                     <option value="+1">+1</option>
-                    {/* Add more country code options */}
                   </select>
                 ) : (
                   <p className="text-xs font-medium text-[#222222] ml-3">{selectedCountryCode}</p>
@@ -145,7 +142,6 @@ const FullProfileMobileView = () => {
                   required
                 />
               </div>
-              {/* Phone number */}
             </div>
             <div className="mb-6 border-[1px] w-full border-[#C2C2C2] rounded-xl h-14 w relative flex items-center">
               <label
